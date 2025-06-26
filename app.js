@@ -66,9 +66,10 @@ const sessionOptions = {
     }
 };
 
-// app.get("/", (req,res) => {
-//     res.send("I am on root");
-// });
+app.get("/", (req, res) => {
+  res.render("/listings"); // views/home.ejs must exist
+});
+
 
 app.use(session(sessionOptions));
 app.use(flash());
