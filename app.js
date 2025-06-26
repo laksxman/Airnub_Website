@@ -67,7 +67,7 @@ const sessionOptions = {
 };
 
 app.get("/", (req, res) => {
-  res.render("/listings"); // views/home.ejs must exist
+  res.redirect("/listings"); // views/home.ejs must exist
 });
 
 
