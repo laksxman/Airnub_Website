@@ -135,3 +135,80 @@ body {
   height: 400px;
   width: 80vh;
 }
+
+
+/* Small devices (phones, < 768px) */
+@media (max-width: 767px) {
+  .navbar {
+    height: 4rem;
+  }
+  .fa-compass {
+    font-size: 1.5rem;
+  }
+  .navbar-nav .nav-link {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.9rem;
+  }
+  .f-info {
+    height: auto;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .card-img-top {
+    border-radius: 0.5rem !important;
+  }
+  .show-img {
+    height: 25vh;
+  }
+  #map {
+    width: 90vw;
+    height: 300px;
+  }
+  .btns {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+/* Medium devices (tablets, 768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar {
+    height: 4.5rem;
+  }
+  .fa-compass {
+    font-size: 1.8rem;
+  }
+  .navbar-nav .nav-link {
+    padding: 0.4rem 0.8rem;
+    font-size: 1rem;
+  }
+  .f-info {
+    height: 7rem;
+  }
+  .card-img-top {
+    border-radius: 0.8rem !important;
+  }
+  .show-img {
+    height: 28vh;
+  }
+  #map {
+    width: 75vw;
+    height: 350px;
+  }
+  .btns {
+    flex-direction: row;
+    gap: 0.8rem;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #map {
+    width: 80vh;
+    height: 400px;
+  }
+  .btns {
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
